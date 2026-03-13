@@ -351,7 +351,7 @@
         const DEFAULT_DATA = { 
             "Config": { 
                 "Title": "DPMods VIP", "Subtitle": "GATEWAY V8.1 // ONLINE", "AdminUrl": "", "UpdateUrl": "",
-                "AppVersion": 1, "KeyDurationHours": 24,
+                "AppVersion": 1, "KeyDurationHours": 48,
                 "Api": { "BaseUrl": "", "Token": "" },
                 "Texts": { "BtnAdmin": "ADMIN SUPPORT", "BtnKey": "GET KEY", "BtnLogin": "ACTIVATE SYSTEM", "Hint": "ENTER ACCESS KEY" }
             }, 
@@ -467,7 +467,7 @@
             document.getElementById('confUrl').value = dbData.Config.AdminUrl || "";
             document.getElementById('confVer').value = dbData.Config.AppVersion || 1;
             document.getElementById('confUpdateUrl').value = dbData.Config.UpdateUrl || "";
-            document.getElementById('confDuration').value = dbData.Config.KeyDurationHours || 24;
+            document.getElementById('confDuration').value = dbData.Config.KeyDurationHours || 48;
 
             document.getElementById('confBtnAdmin').value = dbData.Config.Texts.BtnAdmin || "";
             document.getElementById('confBtnKey').value = dbData.Config.Texts.BtnKey || "";
@@ -606,7 +606,7 @@
             dbData.Config.AdminUrl = document.getElementById('confUrl').value;
             dbData.Config.AppVersion = parseInt(document.getElementById('confVer').value) || 1;
             dbData.Config.UpdateUrl = document.getElementById('confUpdateUrl').value;
-            dbData.Config.KeyDurationHours = parseInt(document.getElementById('confDuration').value) || 24;
+            dbData.Config.KeyDurationHours = parseInt(document.getElementById('confDuration').value) || 48;
             
             if(!dbData.Config.Texts) dbData.Config.Texts = {};
             dbData.Config.Texts.BtnAdmin = document.getElementById('confBtnAdmin').value;
